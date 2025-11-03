@@ -1,19 +1,24 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f8fa;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 
 .container {
   background-color: #fff;
   padding: 20px 30px;
-  margin: 20px 0;
+  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 400px;
+  text-align: center;
 }
+
 
 .logo {
   text-align: center;
@@ -162,4 +167,58 @@ input[type="text"], input[type="password"] {
 input[type="text"]:focus, input[type="password"]:focus {
   border-color: #133653;
   outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 340px;
+  text-align: center;
+}
+
+.form-container .logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-container button {
+  background-color: #0a2942;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #133b5c;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
 }
