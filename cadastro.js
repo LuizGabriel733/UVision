@@ -32,3 +32,8 @@ skinConditionRadios.forEach(radio => {
     }
   });
 });
+
+// Salvando dados no LocalStorage
+let users = JSON.parse(localStorage.getItem('users')) || [];
+users.push({ nome: name, email, password });
+localStorage.setItem('users', JSON.stringify(users));
