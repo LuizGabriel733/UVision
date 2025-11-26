@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     },
     logout: function(){
       localStorage.removeItem('currentUser');
-      location.href = 'login.html';
+      location.href = 'index.html';
     }
   };
 });
