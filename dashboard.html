@@ -18,7 +18,7 @@
                 <div class="header-subtitle">Bem-vindo de volta!</div>
             </div>
         </div>
-        <button class="sync-btn">
+        <button class="sync-btn" id="sync-button">
             <i class="feather icon-refresh-cw icon"></i>
             <span class="text-xs">Sync</span>
         </button>
@@ -29,31 +29,30 @@
 <div class="device-status">
     <div class="device-status-left">
         <i class="feather icon-bluetooth icon" style="color: #fdb813;"></i>
-        <span class="device-status-text">Pulseira Conectada</span>
+        <span class="device-status-text" id="device-status-text">Pulseira Conectada</span>
     </div>
-    <span class="badge badge-online">Online</span>
+    <span class="badge badge-online" id="status-badge">Online</span>
 </div>
 
 <!-- Conteúdo Principal -->
 <main class="main-content">
     <div class="container">
-        <!-- Alert de Aviso (condicional) -->
-        <div class="alert section">
+        <div class="alert section" id="safety-alert" style="display: none;"><!-- Alert de Aviso (condicional) -->
             <i class="feather icon-alert-triangle icon"></i>
-            <span class="alert-text">Atenção! Você tem apenas 45 minutos de exposição segura restante.</span>
+            <span class="alert-text" id="alert-message">Atenção! Você tem apenas 45 minutos de exposição segura restante.</span>
         </div>
 
         <!-- Card Índice UV Atual -->
         <div class="uv-card section">
             <div class="uv-header">
                 <div class="uv-title">Índice UV Atual</div>
-                <div class="uv-description">Atualizado há 2 minutos</div>
+                <div class="uv-description" id="last-update-time">Aguardando dados...</div>
             </div>
             <div class="uv-content">
                 <div class="uv-left">
-                    <div class="uv-number">7</div>
-                    <span class="uv-badge">Alto</span>
-                    <div class="uv-safe-time">Tempo seguro: <span class="highlight">45 min</span></div>
+                    <div class="uv-number" id="uv-index-value">...</div>
+                    <span class="uv-badge" id="uv-classification">Aguardando</span>
+                    <div class="uv-safe-time">Tempo seguro: <span class="highlight" id="safe-time-remaining">...</span></div>
                 </div>
                 <div class="uv-right">
                     <i class="feather icon-sun icon"></i>
@@ -65,17 +64,17 @@
         <div class="stats-grid section">
             <div class="stat-card">
                 <div class="stat-description">Exposição Hoje</div>
-                <div class="stat-number">120</div>
+                <div class="stat-number" id="exposure-today">0</div>
                 <div class="stat-complement">min</div>
             </div>
             <div class="stat-card">
                 <div class="stat-description">Média Semanal</div>
-                <div class="stat-number">85</div>
+                <div class="stat-number" id="average-weekly">0</div>
                 <div class="stat-complement">min/dia</div>
             </div>
             <div class="stat-card">
                 <div class="stat-description">Alertas</div>
-                <div class="stat-number">3</div>
+                <div class="stat-number" id="alerts-today">0</div>
                 <div class="stat-complement">hoje</div>
             </div>
         </div>
@@ -89,7 +88,9 @@
                 </div>
                 <button class="view-more-btn">Ver Mais</button>
             </div>
-            <div class="hour-bar">
+            <div id="hourly-exposure-container"></div>
+
+            <!-- <div class="hour-bar">
                 <div class="hour-label">08:00</div>
                 <div class="progress-bar">
                     <div class="progress-fill" style="width: 60%;">36</div>
@@ -106,13 +107,12 @@
                 <div class="progress-bar">
                     <div class="progress-fill" style="width: 40%;">24</div>
                 </div>
-            </div>
+            </div> -->
             <!-- Adicione mais horas conforme necessário -->
         </div>
     </div>
 </main>
 
-<!-- Navegação Inferior -->
 <nav class="nav-bottom">
     <div class="container">
         <a href="#" class="nav-btn active">
@@ -126,12 +126,16 @@
         <a href="#" class="nav-btn">
             <i class="feather icon-bell icon"></i>
             <span>Alertas</span>
-        </a>
+            </a>
         <a href="#" class="nav-btn">
             <i class="feather icon-user icon"></i>
             <span>Perfil</span>
         </a>
     </div>
 </nav>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="registros.js"></script>
 </body>
 </html>
