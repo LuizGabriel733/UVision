@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - UVision</title>
     <link rel="stylesheet" href="login.css">
+    <script>
+        // Se já estiver logado, manda direto para dashboard
+        if (localStorage.getItem('currentUser')) {
+            location.href = 'index.html';
+        }
+    </script>
 </head>
 <body>
 <div class="container">

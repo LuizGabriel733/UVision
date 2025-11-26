@@ -12,8 +12,9 @@ loginForm.addEventListener('submit', function(e){
   const user = users.find(u => u.email === email && u.password === password);
 
   if (user) {
+    // Marca sessão e redireciona
+    localStorage.setItem('currentUser', JSON.stringify({ nome: user.nome, email: user.email }));
     alert(`Bem-vindo de volta, ${user.nome}!`);
-    // Redireciona para a tela principal (exemplo)
     window.location.href = 'dashboard.html';
   } else {
     alert('E-mail ou senha incorretos!');
