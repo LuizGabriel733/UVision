@@ -18,14 +18,13 @@ body {
 /* Container principal */
 .container {
     width: 100%;
-    max-width: 520px;        /* AUMENTEI para ficar maior em telas grandes */
+    max-width: 520px;
     background: white;
     padding: 40px 35px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Centralização da logo */
 .logo img {
     width: 70px;
     display: block;
@@ -94,12 +93,12 @@ button:hover {
     text-decoration: none;
 }
 
-/* Esconde os níveis de pigmentação */
 .hidden {
     display: none;
 }
 
-/* Tornar tudo ainda mais responsivo em telas MUITO grandes */
+/* Responsividade */
+
 @media (min-width: 1600px) {
     .container {
         max-width: 650px;

@@ -10,6 +10,13 @@ body {
     background-color: #ffffff;
     min-height: 100vh;
     padding-bottom: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 /* Classes de tamanho de fonte */
@@ -20,9 +27,11 @@ body {
 .text-5xl { font-size: 3rem; }
 
 .container {
+    width: 100%;
     max-width: 448px;
     margin: 0 auto;
     padding: 16px;
+    box-sizing: border-box;
 }
 
 .header {

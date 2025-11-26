@@ -62,25 +62,6 @@
                 </div>
             </div>
 
-            <div class="tabs-container">
-                <div class="tabs-list">
-                    <button class="tab active" data-tab="exposicao">Exposição</button>
-                    <button class="tab" data-tab="indice">Índice UV</button>
-                </div>
-                <div class="tab-content">
-                    <div id="exposicao" class="tab-panel active">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h2 class="chart-title">Tempo de Exposição</h2>
-                                <p class="chart-description">Últimos 7 dias</p>
-                            </div>
-                            <div id="bar-chart" class="chart"></div>
-                        </div>
-                    </div>
-                    <div id="indice" class="tab-panel">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h2 class="chart-title">Índice UV Médio</h2>
                                 <p class="chart-description">Últimos 7 dias</p>
                             </div>
                             <div id="line-chart" class="chart"></div>
@@ -112,28 +93,25 @@
             </div>
         </main>
 
-        <nav class="bottom-nav">
-            <div class="nav-content">
-                <button class="nav-btn">
-                    <i class="fas fa-home icon-20"></i>
-                    <span class="nav-text">Home</span>
-                </button>
-                <button class="nav-btn active">
-                    <i class="fas fa-chart-bar icon-20"></i>
-                    <span class="nav-text">Dados</span>
-                </button>
-                <button class="nav-btn">
-                    <i class="fas fa-bell icon-20"></i>
-                    <span class="nav-text">Alertas</span>
-                </button>
-                <button class="nav-btn">
-                    <i class="fas fa-user icon-20"></i>
-                    <span class="nav-text">Perfil</span>
-                </button>
+        <nav class="nav-bottom">
+            <div class="container">
+                <a href="dashboard.html" class="nav-btn" data-page="dashboard.html">
+                    <i class="feather icon-home icon"></i>
+                    <span>Home</span>
+                </a>
+                <a href="dados.html" class="nav-btn" data-page="dados.html">
+                    <i class="feather icon-bar-chart-2 icon"></i>
+                    <span>Dados</span>
+                </a>
+                <a href="alertas.html" class="nav-btn" data-page="alertas.html">
+                    <i class="feather icon-bell icon"></i>
+                    <span>Alertas</span>
+                </a>
             </div>
         </nav>
     </div>
 
     <script src="dados.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>

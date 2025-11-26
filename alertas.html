@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UVision - Alertas e Configurações</title>
     <link rel="stylesheet" href="alertas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header-content">
-                <img src="logo_uvision_branco.png" alt="Logo" class="logo">
+                <img src="logo_uvision.png" alt="Logo" class="logo">
                 <div class="texts">
                     <h1 class="title">Alertas</h1>
                     <p class="subtitle">Notificações e configurações</p>
@@ -122,13 +123,25 @@
                 </div>
             </div>
         </main>
-        <nav class="bottom-nav">
-            <button class="nav-btn">🏠</button>
-            <button class="nav-btn active">🔔</button>
-            <button class="nav-btn">⚙️</button>
-            <button class="nav-btn">👤</button>
+
+        <nav class="nav-bottom">
+            <div class="container">
+                <a href="dashboard.html" class="nav-btn" data-page="dashboard.html">
+                    <i class="feather icon-home icon"></i>
+                    <span>Home</span>
+                </a>
+                <a href="dados.html" class="nav-btn" data-page="dados.html">
+                    <i class="feather icon-bar-chart-2 icon"></i>
+                    <span>Dados</span>
+                </a>
+                <a href="alertas.html" class="nav-btn" data-page="alertas.html">
+                    <i class="feather icon-bell icon"></i>
+                    <span>Alertas</span>
+                </a>
+            </div>
         </nav>
     </div>
     <script src="alertas.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
