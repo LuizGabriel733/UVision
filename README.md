@@ -88,7 +88,7 @@ Este projeto foi desenvolvido como parte do curso de **Sistema de Informação (
 * Charles Gabriel
 * Christian Marques
 * Danilo Clever
-* **Eduardo Freitas (edwfreitas)**
+* Eduardo Freitas
 * Erich Mark
 * Gabriela Marques
 * George Ruso
@@ -100,7 +100,7 @@ Este projeto foi desenvolvido como parte do curso de **Sistema de Informação (
 * Josias Tomáz
 * Lara Jessica
 * Lucas Silva
-* Luiz Gabriel
+* **Luiz Gabriel (LuizGabriel733)**
 * Mateus Fidelis
 * Matheus Araújo
 * Robison Nascimento
