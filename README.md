@@ -1,14 +1,14 @@
 # UVision: Pulseira Inteligente para Monitoramento de Radiação UV
 
-> Um projeto de pulseira inteligente voltada ao monitoramento de radiação ultravioleta (UV) e prevenção do câncer de pele.
+> Um projeto de um sistema inteligente voltada ao monitoramento de radiação ultravioleta (UV) e prevenção do câncer de pele.
 
-![[INSERIR IMAGEM DA PULSEIRA AQUI]](https://via.placeholder.com/600x300)
+![WhatsApp Image 2025-11-30 at 11 20 58 (2)](https://github.com/user-attachments/assets/916b56dc-72d3-408a-8f7f-cebfeeb0568d)
 
 ## 🎯 Sobre o Projeto
 
 A exposição excessiva à radiação solar é um grave problema de saúde pública. De acordo com a OMS, cerca de 60 mil pessoas morrem anualmente por doenças relacionadas a essa exposição. Em países tropicais como o Brasil, a incidência solar é elevada na maior parte do ano, aumentando os riscos.
 
-O **UVision** nasce como uma tecnologia assistiva universal com o objetivo de promover a prevenção e a conscientização sobre os efeitos da radiação solar. A pulseira monitora a exposição e incentiva hábitos mais seguros, sendo especialmente útil para trabalhadores e praticantes de atividades ao ar livre.
+O **UVision** nasce como uma tecnologia assistiva universal com o objetivo de promover a prevenção e a conscientização sobre os efeitos da radiação solar. O sistema monitora a exposição e incentiva hábitos mais seguros, sendo especialmente útil para trabalhadores e praticantes de atividades ao ar livre.
 
 Este projeto integra ciência, tecnologia e saúde preventiva para contribuir com a redução de casos de câncer de pele.
 
